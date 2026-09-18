@@ -1,0 +1,36 @@
+Here is the list of all the interview questions covered in this thread:
+
+Here is the complete list of interview questions formatted clearly for quick reading and study preparation:
+
+1. Number vs. BigInt
+Q1: What is the core difference between Number and BigInt in JavaScript?
+
+Q2: How do you handle BigInt serialization issues when using JSON.stringify()?
+
+2. undefined vs. null
+Q3: What is the difference between undefined and null?
+
+Q4: Why does typeof null return "object", and how does it differ from typeof undefined?
+
+Q5: How do undefined and null behave differently with function default parameters, loose equality (==), and strict equality (===)?
+
+3. Symbol vs. String
+Q6: Why do we need Symbol when we can already store any string as an object key?
+
+Q7: What is the difference between let x = Symbol("description") and let x = "description"?
+
+Q8: How do Symbols prevent property collisions in third-party libraries, and how can you retrieve Symbol keys using reflection methods like Object.getOwnPropertySymbols()?
+
+4. Object Coercion & Bracket Notation
+Q9: What happens when an object uses a mix of Symbol keys, literal string keys, and variable bracket lookups (e.g., user[id1] vs. user["id1"])?
+
+Q10: What happens when plain objects are used as keys in bracket notation (e.g., a[b] = 123; a[c] = 456;), and how does JavaScript prioritize toString() over valueOf() during property key resolution?
+
+
+Best Practice for variables
+
+Use const by default for variables whose reference should not change.
+
+Use let when you know the variable's value will need to be re-assigned (e.g., loop counters).
+
+Avoid var in modern JavaScript to prevent issues caused by broad scoping and unintended hoisting behavior.
